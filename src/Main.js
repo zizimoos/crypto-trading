@@ -15,12 +15,31 @@ const Title = styled.h1`
 const InfoSection = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 2rem 0;
   padding: 1rem;
   background-color: #f5f5f5;
   border-radius: 0.5rem;
+`;
+const PieChartContainer = styled.div`
+  width: 200px;
+  height: 200px;
+`;
+const UserItems = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    line-height: 2.5rem;
+
 `;
 const ChartSection = styled.div`
   display: flex;
@@ -32,17 +51,13 @@ const ChartSection = styled.div`
   background-color: #f5f5f5;
   border-radius: 0.5rem;
 `;
-const ChartContainer = styled.div`
-  width: 200px;
-  height: 200px;
-`;
+
 const ChartItems = styled.div`
   width: 200px;
   height: 600px;
   border-radius: 0.5rem;
   background-color: white;
 `;
-
 const ControllSection = styled.div`
   width: 1280px;
   height: 500px;
@@ -55,6 +70,17 @@ const ControllSection = styled.div`
   background-color: #f5f5f5;
   border-radius: 0.5rem;
 `;
+const ControlInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+`;
 
 function Main(props) {
   return (
@@ -62,7 +88,21 @@ function Main(props) {
       <Container>
         <Title>Crypto Wave</Title>
         <InfoSection>
-          <ChartContainer>
+          <UserItems>
+            <div>
+              <h1>KRW BALANCE : 000,000</h1>
+              <h1>COIN BALANCE : 000,000</h1>
+              <h1>User Items</h1>
+              <h1>User Items</h1>
+            </div>
+            <div>
+              <h1>CURRENT PRICE : 000,000</h1>
+              <h1>SELL PRICE : 000,000</h1>
+              <h1>AVG PRICE : 000,000</h1>
+              <h1>BUY PRICE : 000,000</h1>
+            </div>
+          </UserItems>
+          <PieChartContainer>
             <PieChart
               data={[
                 { title: "One", value: 10, color: "#E38627" },
@@ -70,7 +110,7 @@ function Main(props) {
                 { title: "Three", value: 20, color: "#6A2135" },
               ]}
             />
-          </ChartContainer>
+          </PieChartContainer>
         </InfoSection>
         <ChartSection>
           <TradingViewWidget
@@ -87,7 +127,14 @@ function Main(props) {
           />
           <ChartItems />
         </ChartSection>
-        <ControllSection></ControllSection>
+        <ControllSection>
+          <ControlInput>
+            <input type="text"></input>
+            <input type="text"></input>
+            <input type="text"></input>
+            <input type="text"></input>
+          </ControlInput>
+        </ControllSection>
       </Container>
     </>
   );

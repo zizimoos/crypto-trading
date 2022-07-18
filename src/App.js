@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import Main from "./Main";
+import Router from "./Router";
 
 const GlobalStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -68,7 +68,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Main />
+      <Router />
     </>
   );
 }
