@@ -117,12 +117,12 @@ function Main(props) {
             symbol={"UPBIT:NEARKRW"}
             theme={Themes.LIGHT}
             width={"1024px"}
-            interval="D"
-            locale="en"
+            interval="1"
+            locale="kr"
             timezone="Asia/Seoul"
-            hideSideToolbar={false}
-            container_id={"tradingview_ae721"}
-            details
+            hide_side_toolbar={true}
+            container_id={"tradingview_902e5"}
+            details={false}
             news={["headlines"]}
           />
           <ChartItems />
