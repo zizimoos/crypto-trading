@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+import upbitNav from "../assets/img/upbitNav.png";
+import customerPage from "../assets/img/customerPage.png";
+import openApiButton from "../assets/img/openApiButton.png";
+import openApiManage from "../assets/img/openApiManage.png";
+import openApiAddr from "../assets/img/openApiAddr.png";
+import openApiConfirm from "../assets/img/openApiConfirm.png";
+import openApiKey from "../assets/img/openApiKey.png";
+
 const Container = styled.div`
   width: 1280px;
   margin: 0 auto;
@@ -27,7 +35,6 @@ function Manual(props) {
         <br />
         <br />
       </p>
-
       <Title>제작자의 변</Title>
       <p>위의 내용들의 장단점을 논하기 전에 제작자의 작업기를 이야기 해보자.</p>
       <p>자동매매를 처음 만들어 보고자 했을 때의 아이디어는 2번이였다.</p>
@@ -37,8 +44,8 @@ function Manual(props) {
         불가능한 것을 자동화 하고자 했다.
       </p>
       <p>
-        다행스럽게도, 예상이상의 수익률을 달성했고, 지속 가능해 보이는 지표들을
-        확인했다.
+        다행스럽게도, 예상이상의 수익률을(월 15%, 두달 연속) 달성했고, 지속
+        가능해 보이는 지표들을 확인했다.
       </p>
       <br />
       <p>주말에 미팅을 통해서 확인한 것은,</p>
@@ -62,12 +69,18 @@ function Manual(props) {
         생각된다.
       </p>
       <p>
-        서비스를 위한 프로그램은 위의 작업과는 다른 성격의 작업이고, 공수가 좀
+        서비스를 위한 프로그램은 위의 작업과는 다른 성격의 작업이고, 공수가
         들어간다.
       </p>
       <p> 이런 이유로, 서비스 프로그램은 베타버전 후에 생각해보도록 하자.</p>
-
       <Title>UPBIT OPEN API</Title>
+      <img src={upbitNav} alt="upbitOpenApi" />
+      <img src={customerPage} alt="customerPage" />
+      <img src={openApiButton} alt="openApiButton" />
+      <img src={openApiManage} alt="openApiManage" />
+      <img src={openApiAddr} alt="openApiAddr" />
+      <img src={openApiConfirm} alt="openApiConfirm" />
+      <img src={openApiKey} alt="openApiKey" />
     </Container>
   );
 }
